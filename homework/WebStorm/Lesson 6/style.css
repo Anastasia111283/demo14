@@ -1,0 +1,62 @@
+body {
+    background-color: #f8f8f8;
+}
+ul li a {
+    font-style: normal;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 16px;
+}
+ul li a {
+    color: #3E6D8E;
+}
+li {
+    list-style-type: none;
+}
+.logo {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+.main {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+.head {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+#first {
+    width: 500px;
+    background: #F3F2EE;
+    border: solid 4px #b58900;
+    border-radius: 50px;
+    float: left;
+    list-style-image: url("images/символ.jpg");
+}
+input {
+    width: 200px;
+    height: 20px;
+    color: #3E6D8E;
+    font-size: 16px;
+    background-color: #F3F2EE;
+    border-color: #bdbdbd;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+.frame img{
+    width: 450px;
+    height: 350px;
+    border: 3px solid #ccc;
+    background: #eee;
+    margin: auto;
+    padding: 15px 25px;
+    width: 50%;
+    height: 50%;
+}
