@@ -1,0 +1,139 @@
+.body {
+    background-color: #f8f8f8;
+}
+.header{
+    position:relative;
+    width: 900px;
+    height:100px;
+    margin-bottom: 10px;
+    margin-left: 10px; /*отступ*/
+}
+.header img{
+    width: 80px; /* ширина картинки 140 */
+    height: 90px; /* ысота картинки, от неё будет зависеть и размер общего блока */
+    object-fit: cover; /* обрезаем края картинки, если они не вместятся в блок */
+    margin-right: 10px;
+    float: left; /* важный момент. с помощью этого значения, мы
+    показывем браузеру, что блок должен соприкасаться со вторым
+    блоком приемущественно с левой стороны */
+}
+.header h1{
+    color: #3E6D8E;
+    overflow-wrap: normal; /* показывает тексту, что он не должен
+    заходить за границы блока */
+    word-wrap: normal;
+    padding: 10px; /* отступ от рамки до текста - делает его красивее */
+    margin-left: 15px; /* отступ с левой стороны от блока с картинкой */
+    display: block; /* обознначает, что это не просто бесформенный текст,
+    а блок внутри блока */
+    font-weight:bold; /* толщина текста - толстый */
+    font-size:50px; /* размер текста*/
+    margin: 2px 0 0 0; /* отступ от блока с текстом */
+}
+.menu{
+    font-style: normal;
+    color: #3E6D8E;
+    font-variant: small-caps;
+    font-weight: bold;
+    font-size: 16px;
+    list-style-type: none;
+}
+.menu li{
+    list-style-type: none;
+}
+.menu li a:hover{
+    color: #b58900;
+}
+.bold{
+    font-weight: bold;
+}
+.main {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+input{
+    width: 200px;
+    height: 20px;
+    color: #3E6D8E;
+    font-size: 16px;
+    background-color: #F3F2EE;
+    border-color: #bdbdbd;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+.text{
+   front-size:20px;
+    color: darkblue;
+}
+.text:focus{
+    color: #13540c;
+}
+.text:hover{
+    background-color: #fff5ad;
+}
+.frame img{
+    border: 3px solid #ccc;
+    background: #eee;
+    display: block; /* Рисунок как блочный элемент */
+    margin: auto;
+    padding: 15px 25px;
+    width: 50%;
+    height: 50%;
+}
+img:hover{
+    border:none; /* рамка исчезает при наведении */
+
+}
+p:first-letter {
+    font-family: "Times New Roman", Times, serif; /* Гарнитура шрифта первой буквы */
+    font-size: 200%; /* Размер шрифта первого символа */
+    color: #3E6D8E; /* изменение цвет текста */
+}
+textarea{
+    text-transform: capitalize;
+}
+table{
+    width: 500px;
+    height: 200px;
+    border: 1px solid #707070; /* внешняя граница таблицы*/
+}
+th{
+    height: 100px; /* высота верхней строки таблицы*/
+    text-align: center;
+    border: 1px solid #707070; /* граница для первой строки */
+}
+td{
+    text-align: center;
+    border: 1px solid #707070; /* границы для ячеек таблицы */
+}
+#first {
+    width: 500px;
+    background: #F3F2EE;
+    border: solid 4px #b58900;
+    border-radius: 50px;
+    float: left;
+    list-style-image: url("images/symbol.jpg");
+}
+.head {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+.footer {
+    bottom:0;
+    left:0;
+    width:100%;
+    height: 50px;
+    background-color: white;
+    text-align:center;
+    color: black;
+    margin: 10px 0;
+}
+.iframe{
+    width: 100%;
+    height: 300px;
+}
