@@ -1,0 +1,220 @@
+.body {
+    background-color: #f8f8f8; /*цвет*/
+}
+.container{
+    width: 1200px; /* ширина родительский блок*/
+    margin: 0 auto; /* расположить по центру экрана*/
+}
+.header{
+    background-image: url("https://sportishka.com/uploads/posts/2022-04/1650629868_7-sportishka-com-p-nesvizhskii-zamok-belarus-krasivo-foto-7.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    position:relative;/*относительное позиционирование*/
+    width: 1200px; /*ширина*/
+    height:200px;/*высота*/
+    margin-bottom: 10px;/*внешний отступ внизу элемента*/
+    margin-left: 10px; /*устанавливает внешний отступ слева от элемента*/
+}
+.header img{
+    height: 70px; /*высота картинки, от неё будет зависеть и размер общего блока*/
+    object-fit: cover; /*обрезаем края картинки, если они не вместятся в блок*/
+    margin-right: 10px; /*устанавливает внешний отступ справа от элемента*/
+    float: left; /*важный момент. с помощью этого значения, мы
+    показывем браузеру, что блок должен соприкасаться со вторым
+    блоком приемущественно с левой стороны*/
+    padding: 20px; /*отодвинуть логотип от левого края*/
+    opacity: 0.4;
+}
+.header h1{
+    color: #326932;/*цвет*/
+    overflow-wrap: normal; /*показывает тексту, что он не должен
+    заходить за границы блока*/
+    padding: 10px; /*отступ от рамки до текста - делает его красивее*/
+    margin-left: 15px; /*отступ с левой стороны от блока с картинкой*/
+    display: block; /*обознначает, что это не просто бесформенный текст,
+    а блок внутри блока*/
+    font-weight:bold; /*толщина текста - толстый*/
+    font-size: 50px; /*размер текста*/
+    position: relative;
+    margin: 2px 0 0 0; /*отступ от блока с текстом */
+}
+.menu{
+    display: flex;/*изменить тип элемента и делаем его гибким*/
+    justify-content: flex-end;/*меню расположить в правой части*/
+    position: relative;
+}
+.menu-item{
+    width: 600px;/*ширина*/
+    display: flex;/*изменить тип элемента и делаем его гибким*/
+    justify-content: space-around;/*элементы выравниваются равномерно на все
+    пространство*/
+    opacity: 0.7;
+}
+.menu-1{
+    display: inline-block; /*меню выравнивается в линию*/
+    font-style: oblique; /*наклонный текст*/
+    background-color: white;
+    list-style-type: none; /*убрать маркеры меню*/
+    position: relative;
+    z-index: 1;
+}
+.menu-1 a{
+    color: #326932;/*цвет*/
+    font-variant: small-caps;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.menu-2{
+    display: none; /*убрать элементы из меню*/
+}
+.menu li a:hover{
+    color: #b58900;/*цвет*/
+}
+.contacts{
+    width: 100%; /*ширина*/
+    height:374px;/*высота*/
+    border: 2px solid #487e3a;/*цвет*/
+    padding: 10px 15px;
+}
+.bold{
+    font-weight: bold;
+}
+.main {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+input{
+    width: 200px;
+    height: 20px;
+    color: #3E6D8E;/*цвет*/
+    font-size: 16px;
+    background-color: #F3F2EE;/*цвет*/
+    border-color: #bdbdbd;/*цвет*/
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+.text{
+   font-size: 20px;
+   color: darkblue;/*цвет*/
+}
+.text:focus{
+    color: #13540c;/*цвет*/
+}
+.text:hover{
+    background-color: #fff5ad;/*цвет*/
+}
+.frame img{
+    border: 3px solid #ccc;/*цвет*/
+    background: #eee;/*цвет*/
+    display: block; /*рисунок как блочный элемент*/
+    margin: auto;
+    padding: 10px 15px;
+    height: 200px;
+    width: 300px;/*ширина*/
+}
+img:hover{
+    border:none; /* рамка исчезает при наведении */
+}
+p:first-letter {
+    font-family: "Times New Roman", Times, serif; /*гарнитура шрифта первой буквы*/
+    font-size: 200%; /*размер шрифта первого символа*/
+    color: #3E6D8E; /*изменение цвет текста*/
+}
+textarea{
+    text-transform: capitalize;
+}
+table{
+    width: 500px;
+    height: 200px;
+    border: 1px solid #707070; /* внешняя граница таблицы*/
+}
+th{
+    height: 100px; /* высота верхней строки таблицы*/
+    text-align: center;
+    border: 1px solid #707070; /* граница для первой строки */
+}
+td{
+    text-align: center;
+    border: 1px solid #707070; /* границы для ячеек таблицы */
+}
+#first {
+    width: 500px;
+    background: #F3F2EE;/*цвет*/
+    border: solid 4px #b58900;/*цвет*/
+    border-radius: 50px;
+    float: left;
+    list-style-image: url("images/symbol.jpg");
+}
+.head {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+.tours{
+    display: flex; /*разместить описание товара справа*/
+}
+.tours1_2{
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.color-button{
+    float: right; /*расположение кнопки*/
+    width: 200px;
+    height: 50px;
+    border: 1px solid #000;
+    margin-left: 20px;
+    line-height: 50px;
+    text-align: center; /*по центру*/
+    color: #112644;/*цвет*/
+    font-variant: small-caps;
+    font-weight: bold;
+    cursor: pointer;
+}
+.color-button:hover{
+    background-color: #487e3a;
+}
+.color-button:active{
+    background-color: #6eaa49;
+}
+.text_2{
+    text-align: center;
+    font-size: 200%; /*размер шрифта первого символа*/
+    color: #3E6D8E; /*изменение цвет текста*/
+}
+.tours_1{
+    display: flex; /*разместить описание товара справа*/
+    flex-wrap: wrap;
+    justify-content: space-around;/*элементы выравниваются равномерно на все
+    пространство*/
+    width: 1200px;
+    height: 400px;
+}
+.tour_1{
+    width: 320px;
+    height: 320px;
+    border: 1px solid darkseagreen;
+    text-align: center;
+    color: #1A3C6C; /*изменение цвет текста*/
+}
+.tour_1 img{
+    width: 300px;
+    height: 200px;
+}
+.footer {
+    width:100%;
+    height: 30px;
+    background-color: #487e3a;
+    padding: 20px;/*отодвинуть от верхней и правой границы*/
+    color: black;
+    display: flex;
+    justify-content: flex-end;/*меню расположить в правой части*/
+}
+.iframe{
+    width: 100%;
+    height: 300px;
+}
