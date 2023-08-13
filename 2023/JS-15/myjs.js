@@ -1,6 +1,6 @@
 //Здание 1: Напишите функцию, которая принимает два аргумента и возвращает все числа,
 // которые делятся на данный делитель. Первый аргумент - это массив чисел, а второй - делитель.
-/*
+
     const divisibleBy = (numbers, divisor) => {
         let newArr =[];
     for(let i=0; i<numbers.length; i++){
@@ -11,31 +11,31 @@
     return newArr;
 }
 console.log(divisibleBy([1, 2, 3, 4, 5, 6], 2));
- */
+
 
 //Задание 2: Создание массива значений Фаренгейта из массива значений Цельсия:
-/*
+
 let celsius = [-15, -5, 0, 10, 16, 20, 24, 32];
 const fahrenheit = celsius.map(item => 9 * item /5 + 32);
 console.log(fahrenheit);
- */
+
 
 // Задание 3: Дана некоторая строка:
 // 'abcde abcde abcde'
 // Замените в ней первый символ каждого слова на '!':
 // '!bcde !bcde !bcde'
-/*
+
 let str = 'abcde abcde abcde';
 const result = str
     .split('')
     .map (item => item ==='a' ? '!' : item)
     .join('');
 console.log(result);
- */
+
 
 // Задание 4: Дан массив с числами: [1, 2, 3, 3, 4, 5]
 // Проверьте, что в этом массиве есть два одинаковых элемента подряд.
-/*
+
 let flag = false;
 const arr = [1, 2, 3, 3, 4, 5];
 for(let i=0; i<arr.length; i++){
@@ -45,7 +45,7 @@ for(let i=0; i<arr.length; i++){
     }
 }
 console.log(flag ? `есть два одинаковых элемента` : `нет таких элементов`);
- */
+
 
 // Задание 5: Complementary DNA (Дезоксирибонуклеиновая кислота (ДНК)) - это химическое вещество,
 // обнаруженное в ядре клетки и несущее «инструкции» для развития и функционирования живых организмов.
@@ -82,5 +82,6 @@ function dna(dna){
     })
     return resalt.join("")
 }
+
 
 console.log(dna(str))
